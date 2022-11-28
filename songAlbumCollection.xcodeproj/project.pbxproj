@@ -15,6 +15,8 @@
 		86C968462935222C009256E8 /* songAlbumCollection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86C968442935222C009256E8 /* songAlbumCollection.xcdatamodeld */; };
 		86D638BE293526D100A74166 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D638BD293526D100A74166 /* AlbumViewModel.swift */; };
 		86D638C229353B4300A74166 /* AlbumRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D638C129353B4300A74166 /* AlbumRow.swift */; };
+		86D638C429353DF600A74166 /* ModifyAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D638C329353DF600A74166 /* ModifyAlbumView.swift */; };
+		86D638C6293540BB00A74166 /* InsertAlbumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D638C5293540BB00A74166 /* InsertAlbumView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		86C968452935222C009256E8 /* songAlbumCollection.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = songAlbumCollection.xcdatamodel; sourceTree = "<group>"; };
 		86D638BD293526D100A74166 /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
 		86D638C129353B4300A74166 /* AlbumRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRow.swift; sourceTree = "<group>"; };
+		86D638C329353DF600A74166 /* ModifyAlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyAlbumView.swift; sourceTree = "<group>"; };
+		86D638C5293540BB00A74166 /* InsertAlbumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsertAlbumView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 			children = (
 				86C9683B2935222A009256E8 /* ContentView.swift */,
 				86D638C129353B4300A74166 /* AlbumRow.swift */,
+				86D638C329353DF600A74166 /* ModifyAlbumView.swift */,
+				86D638C5293540BB00A74166 /* InsertAlbumView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -166,6 +172,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				86C968462935222C009256E8 /* songAlbumCollection.xcdatamodeld in Sources */,
+				86D638C6293540BB00A74166 /* InsertAlbumView.swift in Sources */,
+				86D638C429353DF600A74166 /* ModifyAlbumView.swift in Sources */,
 				86C968432935222C009256E8 /* Persistence.swift in Sources */,
 				86D638C229353B4300A74166 /* AlbumRow.swift in Sources */,
 				86C9683C2935222A009256E8 /* ContentView.swift in Sources */,

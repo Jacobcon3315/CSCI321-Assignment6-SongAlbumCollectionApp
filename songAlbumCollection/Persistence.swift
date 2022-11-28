@@ -14,11 +14,17 @@ struct PersistenceController {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
         
-        let defaultAlbum = Album(context: viewContext)
-        defaultAlbum.albumTitle = "Elsewhere"
-        defaultAlbum.artistName = "Set It Off"
-        defaultAlbum.releaseYear = 2022
-        defaultAlbum.cover = nil
+        let defaultAlbum1 = Album(context: viewContext)
+        defaultAlbum1.albumTitle = "Elsewhere"
+        defaultAlbum1.artistName = "Set It Off"
+        defaultAlbum1.releaseYear = 2022
+        defaultAlbum1.cover = nil
+        
+        let defaultAlbum2 = Album(context: viewContext)
+        defaultAlbum2.albumTitle = "OK ORCHESTRA"
+        defaultAlbum2.artistName = "AJR"
+        defaultAlbum2.releaseYear = 2021
+        defaultAlbum2.cover = nil
 
         do {
             try viewContext.save()

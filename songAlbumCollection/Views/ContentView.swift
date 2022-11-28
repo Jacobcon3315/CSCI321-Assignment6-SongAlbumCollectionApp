@@ -9,7 +9,8 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
-    @Environment(\.managedObjectContext) private var viewContext
+    
+    @Environment(\.managedObjectContext) private var dbContext
 
     @FetchRequest(sortDescriptors: [SortDescriptor(\Album.albumTitle, order: .forward)], predicate: nil, animation: .default)
     private var listOfAlbums: FetchedResults<Album>
@@ -93,6 +94,20 @@ struct ContentView: View {
         let request: NSFetchRequest<Album> = Album.fetchRequest()
         if let list = try? self.dbContext.fetch(request) {
             totalAlbums = list.count
+        }
+    }
+    func deleteAlbum(indexes: IndexSet) async {
+        await dbContext.perform {
+            for index in indexes {
+                dbContext.delete(listOfAlbums[index])
+                totalAlbums -= 1
+            }
+            
+            do {
+                try dbContext.save()
+            } catch {
+                print(error)
+            }
         }
     }
 }
