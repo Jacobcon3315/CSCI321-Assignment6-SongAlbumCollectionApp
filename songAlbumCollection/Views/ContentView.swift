@@ -14,9 +14,6 @@ struct ContentView: View {
 
     @FetchRequest(sortDescriptors: [SortDescriptor(\Album.albumTitle, order: .forward)], predicate: nil, animation: .default)
     private var listOfAlbums: FetchedResults<Album>
-    
-    @State private var totalAlbums = 0
-    @State private var search = ""
 
     var body: some View {
         NavigationStack {
@@ -47,9 +44,7 @@ struct ContentView: View {
         await dbContext.perform {
             for index in indexes {
                 dbContext.delete(listOfAlbums[index])
-                totalAlbums -= 1
             }
-            
             do {
                 try dbContext.save()
             } catch {
