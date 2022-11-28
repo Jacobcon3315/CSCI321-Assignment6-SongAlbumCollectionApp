@@ -2,7 +2,7 @@
 //  songAlbumCollectionApp.swift
 //  songAlbumCollection
 //
-//  Created by Madi Lumsden on 11/28/22.
+//  Created by Jacob Conacher on 11/28/22.
 //
 
 import SwiftUI
