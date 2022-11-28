@@ -18,7 +18,7 @@ extension Album {
     }
     
     var showYear: String {
-        return releaseYear ?? "Undefined"
+        return String(releaseYear)
     }
     
     var showCover: UIImage {

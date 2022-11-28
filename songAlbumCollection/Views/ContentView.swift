@@ -11,7 +11,7 @@ import CoreData
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
 
-    @FetchRequest(sortDescriptors: [SortDescriptor(\Album.albumName, order: .forward)], predicate: nil, animation: .default)
+    @FetchRequest(sortDescriptors: [SortDescriptor(\Album.albumTitle, order: .forward)], predicate: nil, animation: .default)
     private var listOfAlbums: FetchedResults<Album>
 
     var body: some View {

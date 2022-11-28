@@ -13,6 +13,11 @@ struct PersistenceController {
     static var preview: PersistenceController = {
         let result = PersistenceController(inMemory: true)
         let viewContext = result.container.viewContext
+        
+        let defaultAlbum = Album(context: viewContext)
+        defaultAlbum.albumTitle = "Elsewhere"
+        defaultAlbum.artistName = "Set It Off"
+        defaultAlbum.releaseYear = 2022
 
         do {
             try viewContext.save()
@@ -26,7 +31,7 @@ struct PersistenceController {
     let container: NSPersistentContainer
 
     init(inMemory: Bool = false) {
-        container = NSPersistentContainer(name: "Books")
+        container = NSPersistentContainer(name: "songAlbumCollection")
         if inMemory {
             container.persistentStoreDescriptions.first!.url = URL(fileURLWithPath: "/dev/null")
         }
