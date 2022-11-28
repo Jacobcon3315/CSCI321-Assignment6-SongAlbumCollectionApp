@@ -13,7 +13,7 @@ extension Album {
         return albumTitle ?? "Undefined"
     }
     
-    var showAuthor: String {
+    var showArtist: String {
         return artistName ?? "Undefined"
     }
     

@@ -18,6 +18,7 @@ struct PersistenceController {
         defaultAlbum.albumTitle = "Elsewhere"
         defaultAlbum.artistName = "Set It Off"
         defaultAlbum.releaseYear = 2022
+        defaultAlbum.cover = nil
 
         do {
             try viewContext.save()

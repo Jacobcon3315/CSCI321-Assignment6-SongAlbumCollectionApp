@@ -14,6 +14,7 @@
 		86C968432935222C009256E8 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C968422935222C009256E8 /* Persistence.swift */; };
 		86C968462935222C009256E8 /* songAlbumCollection.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 86C968442935222C009256E8 /* songAlbumCollection.xcdatamodeld */; };
 		86D638BE293526D100A74166 /* AlbumViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D638BD293526D100A74166 /* AlbumViewModel.swift */; };
+		86D638C229353B4300A74166 /* AlbumRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86D638C129353B4300A74166 /* AlbumRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		86C968422935222C009256E8 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		86C968452935222C009256E8 /* songAlbumCollection.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = songAlbumCollection.xcdatamodel; sourceTree = "<group>"; };
 		86D638BD293526D100A74166 /* AlbumViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewModel.swift; sourceTree = "<group>"; };
+		86D638C129353B4300A74166 /* AlbumRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				86C9683B2935222A009256E8 /* ContentView.swift */,
+				86D638C129353B4300A74166 /* AlbumRow.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 			files = (
 				86C968462935222C009256E8 /* songAlbumCollection.xcdatamodeld in Sources */,
 				86C968432935222C009256E8 /* Persistence.swift in Sources */,
+				86D638C229353B4300A74166 /* AlbumRow.swift in Sources */,
 				86C9683C2935222A009256E8 /* ContentView.swift in Sources */,
 				86D638BE293526D100A74166 /* AlbumViewModel.swift in Sources */,
 				86C9683A2935222A009256E8 /* songAlbumCollectionApp.swift in Sources */,
